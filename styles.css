@@ -1,17 +1,109 @@
+@font-face {
+    font-family: "Cormorant Upright";
+    src: url(https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+}
+@font-face {
+    font-family: "Cormorant Infant";
+    src: url(https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+Upright:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+}
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #74634A;
+    text-align: center;
+}
 
 body{
-    background-color: rgb(126, 126, 126);
+    background-color: #CDD4B1;
 }
 
 main{
     width: 350px;
-    height: 700px;
-    background-color: rgb(186, 186, 186);
-    margin: 10% auto;
+    height: 720px;
+    background-color: #FEFCF6;
+    margin: 12% auto;
     border-radius: 30px;
+    box-shadow: 
+        3px 5px 12px #989D80,
+        -3px -5px 15px #EFF0E150,
+        inset 1px 1px 15px #E3E0D880,
+        inset -1px -1px 2px #ffffff50;
 }
 
-section, div, footer{
-    outline: 2px red solid;
+#web-content{
     padding: 0px 50px;
+    margin: auto;
+    width: 250px;
+}
+
+
+#profile-pic{
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    margin: 35px auto -30px auto;
+    box-shadow:
+        3px 4px 6px #bab7ae,
+        -3px -5px 8px #ffffff;
+}
+
+h1{
+    font-family: "Cormorant Upright";
+    font-weight: 600;
+    font-size: 36px;
+    color: #000;
+}
+
+#username{
+    font-size: 10px;
+    margin-top: -10%;
+}
+
+.icon{
+    height: 37px;
+    width: 37px;
+    display: inline-block;
+    margin: 0.5% 5px 3% 5px;
+    filter: drop-shadow(1.5px 2.5px 4px #E3E0D8);
+    filter: drop-shadow(0.5px 1px 2px #9B968A);
+}
+
+.divider{
+    border: 0.78px solid #CDD4B1;
+    border-radius: 50px;
+}
+
+h2{
+    font-family: "Cormorant Infant", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #61533f;
+    margin-top: 3%;
+}
+
+.video-container{
+    display: flex;
+    width: 350px;
+    gap: 22px; 
+    overflow-x: auto;
+    justify-content: left;
+    margin-top: -2%;
+    margin-left: -20%;
+    scroll-behavior: smooth;
+}
+
+.video{
+    box-shadow: 3px 3px 5px #888479;
+}
+
+footer{
+    font-weight: 500;
+    font-size: 8px;
+    margin-top: 10%;
+}
+
+#copyright{
+    margin-bottom: -2.5%;
+    margin-top: -3%;
 }
